@@ -37,14 +37,14 @@ Le dossier ***V2*** renferme tous les fichiers utiles:
 
 ## Walkthrough du programme de démonstration
 
-Voir la documentation howtouse/8bmultWalkthrough.docx
+Se référer à la [documentation disponible](/V2/walkthrough/8b_unsigned_mult.pdf).
 
 #### Debug
-Si le programme de test (multiplication de 2 entiers) affiche toujours comme résultat `0x0000`, 
+Si le programme de test (multiplication de 2 entiers) affiche à la fin de chaque exécution `0x0000` comme résultat , 
 	vérifiez la bonne connection des sélecteurs des multiplexeurs.  
-Les versions 3.8.x de Logisim sont sujettes à cette erreur 
-(cette version souffre en effet d'un point d'ancrage du pin sélecteur des multiplexeurs placé 1 point trop haut, 
-Avec mon desing ils ne seront pas alimentés et se résoudront à sélectionner toujours l'entrée 0).
+Les versions <3.9 de Logisim sont sujettes à ce problème
+(souffrant d'un point d'ancrage du pin sélecteur des multiplexeurs mal placé, 
+avec mon desing ceux-ci ne seront pas alimentés et se résoudront obstinément à sélectionner toujours l'entrée 0).
 
 ## Version du projet : 2.0
 
@@ -57,4 +57,4 @@ Avec mon desing ils ne seront pas alimentés et se résoudront à sélectionner 
 
 #### divers
 
-- [x] regf_1w_Dual n'utilise plus le sous-circuit regf_1cell_Dual (&rarr; *regf_1w_DualOpt*) &cross;
+- [ ] regf_1w_Dual n'utilise plus le sous-circuit regf_1cell_Dual (&rarr; *regf_1w_DualOpt*) &cross;
